@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Electric Billing System</title>
+    <title>Pay Bill</title>
 
     <!-- Tailwind + Daisy UI Setup -->
     <link
@@ -39,56 +39,72 @@
     <header>
         <div class="p-5 border-b border-blue-600 shadow-lg">
             <div class="flex justify-center items-center gap-8">
-                <img src="../Images/logo.png" alt="" class="w-16">
+                <img src="../../Images/logo.png" alt="" class="w-16">
                 <h1 class="text-4xl font-semibold text-slate-500">Daffodil Power Distribution</h1>
             </div>
         </div>
     </header>
 
 
+    <main class="w-10/12 mx-auto">
+      <h1 class="text-2xl text-slate-500 font-semibold mt-10">Pay Bill</h1>
 
-    <div class="min-h-screen flex items-center justify-center ">
-      <div class="w-10/12 mx-auto flex justify-evenly items-center">
+      <div class="mt-10 bg-slate-100 p-8 rounded-xl shadow-lg">
 
-        <!-- Registraton Form -->
-        <div class="" id="registrationForm">
-          <fieldset
-            class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box"
-          >
-            <h1 class="text-2xl font-semibold mb-4">Create Account</h1>
-            <label class="fieldset-label">User Name</label>
-            <input type="email" class="input" placeholder="Username" />
+        <div class="overflow-x-auto">
+            <table class="table">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th>Meter Number</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Meter Type</th>
+                  <th>Month</th>
+                  <th>Units</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
 
-            <label class="fieldset-label">Name</label>
-            <input type="name" class="input" placeholder="Name" />
 
-            <label class="fieldset-label">Password</label>
-            <input type="password" class="input" placeholder="Name" />
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <td>2342323</td>
+                  <td>Rafi Shariar</td>
+                  <td>Mrpur-1</td>
+                  <td>Residential</td>
+                  <td><select class="select w-[150px]" >
+                    <option selected>Month</option>
+                    <option >January</option>
+                    <option >February</option>
+                    <option >March</option>
+                    <option >April</option>
+                    <option >May</option>
+                    <option >June</option>
+                    <option >July</option>
+                    <option >August</option>
+                    <option >September</option>
+                    <option >October</option>
+                    <option >november</option>
+                    <option >December</option>
+                </select></td>
 
-            <button class="btn btn-neutral mt-4 bg-blue-400">
-              <a href="" id="createBtn">Create</a>
-            </button>
+                <td>189.23</td>
+                <td>1200</td>
 
-            <button class="btn btn-neutral mt-4 bg-slate-500">
-                <a href="../../index.html" id="createBtn">Back</a>
-              </button>
-  
-
-            
-          </fieldset>
+              </tbody>
+            </table>
         </div>
 
-        <!-- Banner Image -->
-        <div class="">
-          <img
-            src="../../Images/Home.jpg"
-            alt=""
-            class="w-xl opacity-70 rounded-2xl"
-          />
+        <div class="flex justify-center gap-32 mt-16 pb-10">
+          <button class="btn btn-lg bg-blue-400 text-white hover:bg-white hover:text-blue-400 hover:border-blue-400">Pay</button>
+          <a class="btn btn-lg bg-red-400 text-white hover:bg-white hover:text-red-400 hover:border-red-400" href="./UserDashboard.html">Cancle</a>
         </div>
-      </div>
     </div>
 
+  
+    </main>
 
     
 
