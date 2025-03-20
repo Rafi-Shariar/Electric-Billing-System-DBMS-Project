@@ -70,7 +70,7 @@
 
           <div class="mt-5 flex gap-10" >
             <button class="btn bg-blue-500 text-white hover:bg-blue-300">Submit</button>
-            <a class="btn  bg-red-500 text-white hover:bg-red-300" href="./UserDashboard.html">Cancle</a>
+            <a class="btn  bg-red-500 text-white hover:bg-red-300" href="./UserDashboard.php">Cancle</a>
           </div>
 
             

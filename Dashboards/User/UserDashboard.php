@@ -69,7 +69,7 @@
             </div>
 
             <div class="mt-10">
-              <a class="btn bg-white" href="./updateInfo.html">Update Info</a>
+              <a class="btn bg-white" href="./updateInfo.php">Update Info</a>
             </div>
     
     
@@ -83,7 +83,7 @@
           <div class="grid md:grid-cols-3 gap-5 p-14 border rounded-2xl mt-10 pb-8">
 
             <!-- cart 1-->
-             <a href="./payBill.html">
+             <a href="./payBill.php">
                 <div class="card card-border bg-base-300 shadow-xl">
                     <div class="card-body flex flex-col items-center justify-center text-center">
                        <img src="../../Images/money.png" alt="" class="w-24">
@@ -96,7 +96,7 @@
               <!-- cart 2 -->
 
 
-            <a href="./billDetails.html">
+            <a href="./billDetails.php">
                 <div class="card card-border bg-base-300 shadow-xl">
                     <div class="card-body flex flex-col items-center justify-center text-center">
                        <img src="../../Images/invoice.png" alt="" class="w-32">
@@ -110,7 +110,7 @@
 
               <!-- cart 3-->
 
-            <a href="./ReportIssue.html">
+            <a href="./ReportIssue.php">
                 <div class="card card-border bg-base-300 shadow-xl">
                     <div class="card-body flex flex-col items-center justify-center text-center">
                        <img src="../../Images/warning.png" alt="" class="w-24">
@@ -127,7 +127,7 @@
 
 
         <div class="flex justify-center mb-30">
-          <a href="../../index.html" class="btn bg-red-500 text-white ">Logout</a>
+          <a href="../../index.php" class="btn bg-red-500 text-white ">Logout</a>
         </div>
 
 

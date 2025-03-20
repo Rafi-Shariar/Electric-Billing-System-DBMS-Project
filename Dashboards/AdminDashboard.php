@@ -54,7 +54,7 @@
             <div class="grid md:grid-cols-4 gap-5 p-14 border rounded-2xl mt-10 pb-8">
 
                 <!-- cart 1-->
-                 <a href="./AddCustomer.html">
+                 <a href="./AddCustomer.php">
                     <div class="card card-border bg-base-300 shadow-xl">
                         <div class="card-body flex flex-col items-center justify-center text-center">
                            <img src="../Images/customer-service.png" alt="" class="w-32">
@@ -67,7 +67,7 @@
                   <!-- cart 2 -->
 
 
-                <a href="./CustomerLog.html">
+                <a href="./CustomerLog.php">
                     <div class="card card-border bg-base-300 shadow-xl">
                         <div class="card-body flex flex-col items-center justify-center text-center">
                            <img src="../Images/customer-review.png" alt="" class="w-32">
@@ -81,7 +81,7 @@
 
                   <!-- cart 3-->
 
-                <a href="./CustomerDetails.html">
+                <a href="./CustomerDetails.php">
                     <div class="card card-border bg-base-300 shadow-xl">
                         <div class="card-body flex flex-col items-center justify-center text-center">
                            <img src="../Images/arrow.png" alt="" class="w-32">
@@ -91,7 +91,7 @@
                 </a>
                 
                   <!-- cart 4-->
-                <a href="./CalculateBill.html">
+                <a href="./CalculateBill.php">
                     <div class="card card-border bg-base-300 shadow-xl">
                         <div class="card-body flex flex-col items-center justify-center text-center">
                            <img src="../Images/accounting.png" alt="" class="w-32">
@@ -102,7 +102,7 @@
 
                <div class="col-span-4 grid grid-cols-2  gap-10">
                  <!-- Cart 5 -->
-                 <a href="./DeleteUser.html">
+                 <a href="./DeleteUser.php">
                   <div class="card card-border bg-base-300 shadow-xl">
                       <div class="card-body flex flex-col items-center justify-center text-center">
                          <img src="../Images/delete.png" alt="" class="w-32">
@@ -113,7 +113,7 @@
 
 
                  <!-- Cart 6 -->
-                 <a href="./ReportsLog.html">
+                 <a href="./ReportsLog.php">
                   <div class="card card-border bg-base-300 shadow-xl">
                       <div class="card-body flex flex-col items-center justify-center text-center">
                          <img src="../Images/warning.png" alt="" class="w-32">
@@ -129,7 +129,7 @@
         </div>
 
         <div class="flex justify-center mb-30 mt-20">
-          <a href="../../index.html" class="btn bg-red-500 text-white ">Logout</a>
+          <a href="../../index.php" class="btn bg-red-500 text-white ">Logout</a>
         </div>
     </main>
 

@@ -52,7 +52,7 @@
         <h1 class="text-center mt-10 text-3xl text-slate-500 font-semibold">User Log</h1>
 
         <div class="mt-7">
-            <a href="./AdminDashboard.html" class="btn mt-4 bg-slate-300">Back to Dashboard</a>
+            <a href="./AdminDashboard.php" class="btn mt-4 bg-slate-300">Back to Dashboard</a>
         </div>
      </div>
 

@@ -50,7 +50,7 @@
       
         <div class="flex justify-around items-center mt-10">
             <h1 class="text-2xl text-slate-500 font-semibold mt-10">Billing Details</h1>
-            <a href="./UserDashboard.html" class="btn mt-5">Back to Dashboard</a>
+            <a href="./UserDashboard.php" class="btn mt-5">Back to Dashboard</a>
         </div>
 
       <div class="mt-10 bg-slate-100 p-8 rounded-xl shadow-lg">
@@ -78,7 +78,7 @@
                   <td>48</td>
                   <td>1300</td>
                   <td>Paid</td>
-                  <td><a href="./payBill.html" class="btn"> pay</a></td>
+                  <td><a href="./payBill.php" class="btn"> pay</a></td>
                 </tr>
 
                 <tr>
@@ -87,7 +87,7 @@
                     <td>48</td>
                     <td>1300</td>
                     <td>Unpaid</td>
-                    <td><a href="./payBill.html" class="btn"> pay</a></td>
+                    <td><a href="./payBill.php" class="btn"> pay</a></td>
                   </tr>
 
 
@@ -97,7 +97,7 @@
                     <td>48</td>
                     <td>1300</td>
                     <td>Paid</td>
-                    <td><a href="./payBill.html" class="btn"> pay</a></td>
+                    <td><a href="./payBill.php" class="btn"> pay</a></td>
                   </tr>
 
               </tbody>

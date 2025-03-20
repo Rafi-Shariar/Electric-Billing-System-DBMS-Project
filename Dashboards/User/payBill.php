@@ -101,7 +101,7 @@
 
         <div class="flex justify-center gap-32 mt-16 pb-10">
           <button class="btn btn-lg bg-blue-400 text-white hover:bg-white hover:text-blue-400 hover:border-blue-400">Pay</button>
-          <a class="btn btn-lg bg-red-400 text-white hover:bg-white hover:text-red-400 hover:border-red-400" href="./UserDashboard.html">Cancle</a>
+          <a class="btn btn-lg bg-red-400 text-white hover:bg-white hover:text-red-400 hover:border-red-400" href="./UserDashboard.php">Cancle</a>
         </div>
     </div>
 

@@ -121,7 +121,7 @@
 
         <div class="flex justify-evenly mt-20">
             <button class="btn btn-lg bg-blue-500 text-white">Submit</button>
-            <a href="./AdminDashboard.html"> <button class="btn btn-lg bg-red-500 text-white">Cancle</button></a>
+            <a href="./AdminDashboard.php"> <button class="btn btn-lg bg-red-500 text-white">Cancle</button></a>
         </div>
 
 
