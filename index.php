@@ -72,7 +72,7 @@
         
             <label class="fieldset-label mt-4">Don't have an account? Register now..</label>
        
-              <a href="./Dashboards/User/RegisterUser.html" class="btn btn-neutral mt-4 bg-slate-400" id="RegistratonBtn">Register</a>
+              <a href="./Dashboards/User/RegisterUser.php" class="btn btn-neutral mt-4 bg-slate-400" id="RegistratonBtn">Register</a>
         
           </fieldset>
         </div>
@@ -89,7 +89,7 @@
       </div>
     </div>
 
-    <img src="./Dashboards/AdminDashboard.html" alt="">
+    <img src="./Dashboards/AdminDashboard.php" alt="">
 
 
 
