@@ -57,9 +57,15 @@
                     <a href="./AdminDashboard.php" class="btn mt-4 bg-slate-300">Back to Dashboard</a>
                 </div>
             </div>
+               
+               <!-- Auto Generated User ID -->
+               <div>
+                    <h1 class="text-2xl text-center font-semibold text-slate-500 mt-5">USER ID : <span id="userID" class="text-blue-700">200</span></h1> 
+                </div>
 
             <!-- Customer Registration Form -->
             <div class=" flex items-center justify-center pt-12">
+                
                 <fieldset class="fieldset bg-white border border-gray-300 p-6 rounded-lg shadow-lg w-8/12">
                    
                     <form action="" class="flex gap-8">
@@ -144,7 +150,15 @@
 
     </main>
 
+   
+    <script>
 
-  </body>
+        function generateRandom4Digit() {
+           return Math.floor(100000 + Math.random() * 900000);
+        }
+
+        document.getElementById('userID').innerText = generateRandom4Digit();
+
+    </script>
   </body>
 </html>
