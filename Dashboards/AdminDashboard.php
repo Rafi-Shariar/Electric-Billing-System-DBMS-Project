@@ -129,7 +129,7 @@
         </div>
 
         <div class="flex justify-center mb-30 mt-20">
-          <a href="../../index.php" class="btn bg-red-500 text-white ">Logout</a>
+          <a href="http://localhost/DBMS/" class="btn bg-red-500 text-white ">Logout</a>
         </div>
     </main>
 

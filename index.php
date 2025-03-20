@@ -35,21 +35,19 @@
     </style>
   </head>
   <body class="font-primary">
-
     <header>
-        <div class="p-5 border-b border-blue-600 shadow-lg">
-            <div class="flex justify-center items-center gap-8">
-                <img src="./Images/logo.png" alt="" class="w-16">
-                <h1 class="text-4xl font-semibold text-slate-500">Daffodil Power Distribution</h1>
-            </div>
+      <div class="p-5 border-b border-blue-600 shadow-lg">
+        <div class="flex justify-center items-center gap-8">
+          <img src="./Images/logo.png" alt="" class="w-16" />
+          <h1 class="text-4xl font-semibold text-slate-500">
+            Daffodil Power Distribution
+          </h1>
         </div>
+      </div>
     </header>
 
-
-
-    <div class="min-h-screen flex items-center justify-center ">
+    <div class="min-h-screen flex items-center justify-center">
       <div class="w-10/12 mx-auto flex justify-evenly items-center">
-        
         <!-- Login Form -->
         <div id="loginForm" class="">
           <fieldset
@@ -68,15 +66,20 @@
               <option selected>User</option>
             </select>
 
-              <a class="btn btn-neutral mt-4 bg-blue-400" id="LoginBtn">Login</a>
-        
-            <label class="fieldset-label mt-4">Don't have an account? Register now..</label>
-       
-              <a href="./Dashboards/User/RegisterUser.php" class="btn btn-neutral mt-4 bg-slate-400" id="RegistratonBtn">Register</a>
-        
+            <button class="btn btn-neutral mt-4 bg-blue-400" id="LoginBtn">Login</button>
+
+            <label class="fieldset-label mt-4"
+              >Don't have an account? Register now..</label
+            >
+
+            <a
+              href="./Dashboards/User/RegisterUser.php"
+              class="btn btn-neutral mt-4 bg-slate-400"
+              id="RegistratonBtn"
+              >Register</a
+            >
           </fieldset>
         </div>
-
 
         <!-- Banner Image -->
         <div class="">
@@ -89,10 +92,23 @@
       </div>
     </div>
 
-    <img src="./Dashboards/AdminDashboard.php" alt="">
+    <img src="./Dashboards/AdminDashboard.php" alt="" />
+   
 
+    <!-- Script -->
+    <script>
+      document.getElementById("LoginBtn").addEventListener("click", (e) => {
+        e.preventDefault();
 
+        const loginAs = document.getElementById("loginas").value;
+        console.log(loginAs);
 
-    <script src="./scripts/login.js"></script>
+        if (loginAs == "User") {
+          window.location.href = "./Dashboards/User/UserDashboard.php";
+        } else {
+          window.location.href = "./Dashboards/AdminDashboard.php";
+        }
+      });
+    </script>
   </body>
 </html>
