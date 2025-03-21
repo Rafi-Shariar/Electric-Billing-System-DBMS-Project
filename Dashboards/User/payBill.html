@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pay Bill</title>
+    <title>Billing Details</title>
 
     <!-- Tailwind + Daisy UI Setup -->
     <link
@@ -47,7 +47,11 @@
 
 
     <main class="w-10/12 mx-auto">
-      <h1 class="text-2xl text-slate-500 font-semibold mt-10">Pay Bill</h1>
+      
+        <div class="flex justify-around items-center mt-10">
+            <h1 class="text-2xl text-slate-500 font-semibold mt-10">Pay Bill</h1>
+            <a href="./UserDashboard.html" class="btn mt-5">Back to Dashboard</a>
+        </div>
 
       <div class="mt-10 bg-slate-100 p-8 rounded-xl shadow-lg">
 
@@ -57,52 +61,43 @@
               <thead>
                 <tr>
                   <th>Bill ID</th>
-                  <th>Meter Number</th>
-                  <th>Name</th>
-                  <th>Address</th>
-                  <th>Meter Type</th>
                   <th>Month</th>
                   <th>Units</th>
-                  <th>Total</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Pay Now</th>
                 </tr>
               </thead>
 
 
               <tbody>
                 <!-- row 1 -->
-                <tr>
-                  <td>1021</td>
-                  <td>2342323</td>
-                  <td>Rafi Shariar</td>
-                  <td>Mrpur-1</td>
-                  <td>Residential</td>
-                  <td><select class="select w-[150px]" >
-                    <option selected>Month</option>
-                    <option >January</option>
-                    <option >February</option>
-                    <option >March</option>
-                    <option >April</option>
-                    <option >May</option>
-                    <option >June</option>
-                    <option >July</option>
-                    <option >August</option>
-                    <option >September</option>
-                    <option >October</option>
-                    <option >november</option>
-                    <option >December</option>
-                </select></td>
+              
 
-                <td>189.23</td>
-                <td>1200</td>
+                <tr>
+                    <td>0123</td>
+                    <td>February</td>
+                    <td>48</td>
+                    <td>1300</td>
+                    <td>Unpaid</td>
+                    <td><a href="./payBill.html" class="btn"> pay</a></td>
+                  </tr>
+
+
+                  <tr>
+                    <td>0123</td>
+                    <td>February</td>
+                    <td>48</td>
+                    <td>1300</td>
+                    <td>Paid</td>
+                    <td><form action="./pay.php" method="POST"><button class="btn btnn" name="paybill">pay</button></form></td>
+                  </tr>
 
               </tbody>
             </table>
         </div>
 
-        <div class="flex justify-center gap-32 mt-16 pb-10">
-          <button class="btn btn-lg bg-blue-400 text-white hover:bg-white hover:text-blue-400 hover:border-blue-400">Pay</button>
-          <a class="btn btn-lg bg-red-400 text-white hover:bg-white hover:text-red-400 hover:border-red-400" href="./UserDashboard.html">Cancle</a>
-        </div>
+       
     </div>
 
   
