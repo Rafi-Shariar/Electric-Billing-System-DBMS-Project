@@ -38,7 +38,7 @@ if($result->num_rows>0){
         else {
             echo '
             <script>
-               alert("Error!! Try Again);
+               alert("Error!! Try Again");
                window.location = "../Dashboards/User/RegisterUser.html";
              </script>
             ';
