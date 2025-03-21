@@ -35,48 +35,44 @@
     </style>
   </head>
   <body class="font-primary">
-
     <header>
-        <div class="p-5 border-b border-blue-600 shadow-lg">
-            <div class="flex justify-center items-center gap-8">
-                <img src="../Images/logo.png" alt="" class="w-16">
-                <h1 class="text-4xl font-semibold text-slate-500">Daffodil Power Distribution</h1>
-            </div>
+      <div class="p-5 border-b border-blue-600 shadow-lg">
+        <div class="flex justify-center items-center gap-8">
+          <img src="../../Images/logo.png" alt="" class="w-16" />
+          <h1 class="text-4xl font-semibold text-slate-500">
+            Daffodil Power Distribution
+          </h1>
         </div>
+      </div>
     </header>
 
-
-
-    <div class="min-h-screen flex items-center justify-center ">
+    <div class="min-h-screen flex items-center justify-center">
       <div class="w-10/12 mx-auto flex justify-evenly items-center">
-
         <!-- Registraton Form -->
         <div class="" id="registrationForm">
           <fieldset
             class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box"
           >
             <h1 class="text-2xl font-semibold mb-4">Create Account</h1>
-            <label class="fieldset-label">Meter Number</label>
-            <input type="email" class="input" placeholder="Meter Number" />
 
-            <label class="fieldset-label">NID Number</label>
-            <input type="name" class="input" placeholder="NID Number" />
+            <form action="../../API/InsertLoginData.php" method="POST">
+              <label class="fieldset-label">User ID</label>
+              <input type="number" class="input" placeholder="User ID" name="userID"/>
 
-            <label class="fieldset-label">User Name</label>
-            <input type="text" class="input" placeholder="User Name" />
+              <label class="fieldset-label">Password</label>
+              <input type="password" class="input" placeholder="User Name" name="pass"/>
 
-            <label class="fieldset-label">Password</label>
-            <input type="password" class="input" placeholder="User Name" />
+              <button class="btn btn-neutral w-full mt-4 bg-blue-400" type="submit">
+                 Create
+              </button>
+            </form>
 
-            <button class="btn btn-neutral mt-4 bg-blue-400">
-              <a href="" id="createBtn">Create</a>
-            </button>
-
-     
-            <a href="../../index.html" id="createBtn" class="btn btn-neutral mt-4 bg-slate-500">Back</a>
-  
-
-            
+            <a
+              href="../../index.html"
+              id="createBtn"
+              class="btn btn-neutral mt-4 bg-slate-500"
+              >Back</a
+            >
           </fieldset>
         </div>
 
@@ -90,11 +86,6 @@
         </div>
       </div>
     </div>
-
-
-    
-
-
 
     <script src="./scripts/login.js"></script>
   </body>
