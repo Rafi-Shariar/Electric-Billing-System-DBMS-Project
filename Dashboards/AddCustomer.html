@@ -68,7 +68,7 @@
                 
                 <fieldset class="fieldset bg-white border border-gray-300 p-6 rounded-lg shadow-lg w-8/12">
                    
-                    <form class="grid grid-cols-2 gap-10" action="../Queries/insertCustomer.php" method="POST">
+                    <form class="grid grid-cols-2 gap-10" action="../API/insertCustomer.php" method="POST">
                         <!-- Left Side -->
                         <div class="w-1/2 space-y-4 w-full">
                             <div>
@@ -97,7 +97,7 @@
                             </div>
 
                              <!-- Hidden User ID -->
-                            <input type="text" id="hiddenUserID" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden" placeholder="City"/>
+                            <input type="number" id="hiddenUserID" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden" placeholder="City" name="userID"/>
                         </div>
             
                         <!-- Right Side -->
@@ -106,10 +106,10 @@
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">Meter Type</label>
                             <select name="meter_type" class="select w-full">
-                                <option value="Domestic Meter">Domestic Meter</option>
-                                <option value="Commercial Meter">Commercial Meter</option>
-                                <option value="Industrial Meter">Industrial Meter</option>
-                                <option value="Agricultural Meter">Agricultural Meter</option>
+                                <option value="Domestic">Domestic Meter</option>
+                                <option value="Commercial">Commercial Meter</option>
+                                <option value="Industrial">Industrial Meter</option>
+                                <option value="Agricultural">Agricultural Meter</option>
                             </select>
                             </div>
 
@@ -130,12 +130,12 @@
             
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">Phone Number</label>
-                                <input type="number" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Phone Number" name="phone" required/>
+                                <input type="text" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Phone Number" name="phone" required/>
                             </div>
             
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">Secondary Phone Number</label>
-                                <input type="number" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Secondary Phone Number" name="secondary_phone" required/>
+                                <input type="text" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Secondary Phone Number" name="secondary_phone" required/>
                             </div>
                         </div>
                         
