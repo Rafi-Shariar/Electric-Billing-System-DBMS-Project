@@ -32,6 +32,15 @@
       .font-primary {
         font-family: "Poppins", sans-serif;
       }
+
+      button{
+        cursor: pointer;
+        
+      }
+
+      .card:hover{
+        background: rgba(91, 149, 238, 0.12);
+      }
     </style>
   </head>
   <body class="font-primary ">
@@ -47,95 +56,107 @@
     </header>
 
     <main class="font-primary w-10/12 mx-auto">
-        
-        <!-- User Informations -->
+
+      
+
+          <!-- User Informations -->
+    <!-- <div>
+      <div class="w-8/12 mx-auto grid grid-cols-2 mt-10 p-8 rounded-lg bg-slate-100">
+
+      
         <div>
-
-          <h1 class="text-2xl text-slate-500 mt-10">Personal Information</h1>
-
-          <div class=" w-8/12 mx-auto grid grid-cols-2  mt-10 p-8  rounded-lg bg-slate-100">
-          
-            <div>
-              <h1 class="text-xl mb-3 font-semibold text-slate-600"> Meter No: 3452323</h1>
-              <h1 class="text-xl mb-3 font-semibold text-slate-600">Name : Rafi Shariar</h1>
-              <h1 class="text-xl mb-3 font-semibold text-slate-600">Address : Mirpur-1</h1>
-              <h1 class="text-xl mb-3 font-semibold text-slate-600">City : Dhaka</h1>
-            </div>
-            <div>
-              <h1 class="text-xl mb-3 font-semibold text-slate-600">Phone : 01932341232</h1>
-              <h1 class="text-xl mb-3 font-semibold text-slate-600">Email : Rafi@gmail.com</h1>
-              <h1 class="text-xl mb-3 font-semibold text-slate-600">Meter Type : Residential</h1>
-              <h1 class="text-xl mb-3 font-semibold text-slate-600">Bill Type : normal</h1>
-            </div>
-
-            <div class="mt-10">
-              <a class="btn bg-white" href="./updateInfo.html">Update Info</a>
-            </div>
-    
-    
-            </div>
-
+          <h1 class="text-xl mb-3 font-semibold text-slate-600"> Meter No: <span id="meterNo"></span></h1>
+          <h1 class="text-xl mb-3 font-semibold text-slate-600">Name: <span id="name"></span></h1>
+          <h1 class="text-xl mb-3 font-semibold text-slate-600">Address: <span id="address"></span></h1>
+          <h1 class="text-xl mb-3 font-semibold text-slate-600">City: <span id="city"></span></h1>
         </div>
+
+
+        <div>
+          <h1 class="text-xl mb-3 font-semibold text-slate-600">Phone: <span id="phone"></span></h1>
+          <h1 class="text-xl mb-3 font-semibold text-slate-600">Email: <span id="email"></span></h1>
+          <h1 class="text-xl mb-3 font-semibold text-slate-600">Meter Type: <span id="meterType"></span></h1>
+          <h1 class="text-xl mb-3 font-semibold text-slate-600">Bill Type: <span id="billType"></span></h1>
+        </div>
+      </div>
+    </div>  -->
+        
+    
+        
 
         <!-- User Carts -->
-        <div class="mb-20">
+        <div class="mb-20 mt-20">
 
-          <div class="grid md:grid-cols-3 gap-5 p-14 border rounded-2xl mt-10 pb-8">
+          <form action="../../API/UserData.php" method="POST">
 
-            <!-- cart 1-->
-             <a href="./payBill.html">
-                <div class="card card-border bg-base-300 shadow-xl">
-                    <div class="card-body flex flex-col items-center justify-center text-center">
-                       <img src="../../Images/money.png" alt="" class="w-24">
-                      <h2 class="card-title text-center">Pay Bill</h2>  
+            <div class="mt-10">
+  
+                <label class="input">
+                  <input type="number" required placeholder="Enter your meter number" name="userID"/>
+                </label>
+             
+           </div>
+
+            <div class="grid md:grid-cols-3 gap-5 p-14 border rounded-2xl mt-10 pb-8">
+
+              <!-- cart 1-->
+               <button value="paybill" name="btn">
+                  <div class="card card-border bg-base-300 shadow-xl">
+                      <div class="card-body flex flex-col items-center justify-center text-center">
+                         <img src="../../Images/money.png" alt="" class="w-24">
+                        <h2 class="card-title text-center">Pay Bill</h2>  
+                      </div>
                     </div>
-                  </div>
-             </a>
-           
-
-              <!-- cart 2 -->
-
-
-            <a href="./billDetails.html">
-                <div class="card card-border bg-base-300 shadow-xl">
-                    <div class="card-body flex flex-col items-center justify-center text-center">
-                       <img src="../../Images/invoice.png" alt="" class="w-32">
-                      <h2 class="card-title text-center">Bill Details</h2>  
+               </button>
+             
+  
+                <!-- cart 2 -->
+  
+  
+              <button value="billdetails" name="btn">
+                  <div class="card card-border bg-base-300 shadow-xl">
+                      <div class="card-body flex flex-col items-center justify-center text-center">
+                         <img src="../../Images/invoice.png" alt="" class="w-32">
+                        <h2 class="card-title text-center">Bill Details</h2>  
+                      </div>
                     </div>
-                  </div>
-
-            </a>
-
-            
-
-              <!-- cart 3-->
-
-            <a href="./ReportIssue.html">
-                <div class="card card-border bg-base-300 shadow-xl">
-                    <div class="card-body flex flex-col items-center justify-center text-center">
-                       <img src="../../Images/warning.png" alt="" class="w-24">
-                      <h2 class="card-title text-center">Report Issue</h2>  
+  
+              </button>
+  
+              
+  
+                <!-- cart 3-->
+  
+              <button value="report" name="btn">
+                  <div class="card card-border bg-base-300 shadow-xl">
+                      <div class="card-body flex flex-col items-center justify-center text-center">
+                         <img src="../../Images/warning.png" alt="" class="w-24">
+                        <h2 class="card-title text-center">Report Issue</h2>  
+                      </div>
                     </div>
-                  </div>
-            </a>
-            
-           
+              <button>
+              
+             
+          </div>
+          </form>
+
         </div>
-
-        </div>
-
-
 
         <div class="flex justify-center mb-30">
           <a href="../../index.html" class="btn bg-red-500 text-white ">Logout</a>
         </div>
 
 
-        
-       
+           
 
     </main>
 
 
+
+    <!-- Script -->
+  
+
   </body>
 </html>
+
+

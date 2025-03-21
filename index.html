@@ -58,7 +58,7 @@
             <!-- form -->
             <form action="./API/LoginHandle.php" method="POST">
               <label class="fieldset-label">User ID</label>
-            <input type="number" class="input" placeholder="Username" name="userid"/>
+            <input type="number" class="input" placeholder="Username" name="userid" id="userID"/>
 
             <label class="fieldset-label">Password</label>
             <input type="password" class="input" placeholder="Password" name="pass"/>
@@ -98,21 +98,5 @@
     </div>
 
     
-
-    <!-- Script -->
-    <!-- <script>
-      document.getElementById("LoginBtn").addEventListener("click", (e) => {
-        e.preventDefault();
-
-        const loginAs = document.getElementById("loginas").value;
-        console.log(loginAs);
-
-        if (loginAs == "User") {
-          window.location.href = "./Dashboards/User/UserDashboard.html";
-        } else {
-          window.location.href = "./Dashboards/AdminDashboard.html";
-        }
-      });
-    </script> -->
   </body>
 </html>

@@ -1,4 +1,5 @@
 <?php
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -8,6 +9,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
 
 //Getting User Data
 $userID = $_POST['userid'];
@@ -35,6 +37,7 @@ if($result->num_rows > 0){
     $row = $result->fetch_assoc();
 
     if($userID === $row['userid'] && $pass === $row['password']){
+
         
         echo '
             <script>
@@ -42,6 +45,10 @@ if($result->num_rows > 0){
                window.location = "../Dashboards/User/UserDashboard.html";
              </script>
             ';
+
+        // header("Location: ../Dashboards/User/UserDashboard.html");
+        // exit();
+
     }
     else {
 
@@ -64,7 +71,7 @@ else {
              </script>
             ';
 }
-
+?>
 
 
 
