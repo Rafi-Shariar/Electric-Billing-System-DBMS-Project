@@ -48,7 +48,7 @@
 
     <main class="font-primary w-10/12 mx-auto">
 
-        <div class="">
+        <div class="pb-20">
             
             <div class="flex justify-around items-center ">
                 <h1 class="text-center mt-10 text-3xl text-slate-500 font-semibold">Add New Customer</h1>
@@ -68,79 +68,85 @@
                 
                 <fieldset class="fieldset bg-white border border-gray-300 p-6 rounded-lg shadow-lg w-8/12">
                    
-                    <form action="" class="flex gap-8">
+                    <form class="grid grid-cols-2 gap-10" action="../Queries/insertCustomer.php" method="POST">
                         <!-- Left Side -->
-                        <div class="w-1/2 space-y-4">
+                        <div class="w-1/2 space-y-4 w-full">
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">Full Name</label>
-                                <input type="text" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Full Name" />
+                                <input type="text" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Full Name" name="fullname" required/>
                             </div>
             
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">NID Number</label>
-                                <input type="number" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="NID Number" />
+                                <input type="number" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="NID Number" name="nid" required/>
                             </div>
             
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">Meter Number</label>
-                                <input type="number" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Meter Number" />
+                                <input type="number" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Meter Number" name="meter_number" required/>
                             </div>
             
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">Address</label>
-                                <input type="text" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Address" />
+                                <input type="text" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Address" name="address" required/>
                             </div>
 
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">City</label>
-                                <input type="text" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="City" />
+                                <input type="text" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="City" name="city" required/>
                             </div>
+
+                             <!-- Hidden User ID -->
+                            <input type="text" id="hiddenUserID" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden" placeholder="City"/>
                         </div>
             
                         <!-- Right Side -->
-                        <div class="w-1/2 space-y-4">
+                        <div class="w-1/2 space-y-4 w-full">
 
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">Meter Type</label>
-                                <select class="select w-full" >
-                                    <option selected>Domestic Meter</option>
-                                    <option >Commercial Meter</option>
-                                    <option >Industrial Meter Meter</option>
-                                    <option >Agricultural Meter</option>
-                                </select>
+                            <select name="meter_type" class="select w-full">
+                                <option value="Domestic Meter">Domestic Meter</option>
+                                <option value="Commercial Meter">Commercial Meter</option>
+                                <option value="Industrial Meter">Industrial Meter</option>
+                                <option value="Agricultural Meter">Agricultural Meter</option>
+                            </select>
                             </div>
 
 
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">Bill Type</label>
-                                <select class="select w-full" >
-                                    <option selected>Normal User</option>
-                                    <option >Industrial User</option>
+                                <select name="bill_type" class="select w-full">
+                                  <option value="Normal User">Normal User</option>
+                                  <option value="Industrial User">Industrial User</option>
                                 </select>
                             </div>
                             
             
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">Email</label>
-                                <input type="email" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email" />
+                                <input type="email" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email" name="email" required/>
                             </div>
             
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">Phone Number</label>
-                                <input type="number" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Phone Number" />
+                                <input type="number" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Phone Number" name="phone" required/>
                             </div>
             
                             <div>
                                 <label class="fieldset-label block text-base font-semibold text-gray-700">Secondary Phone Number</label>
-                                <input type="number" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Secondary Phone Number" />
+                                <input type="number" class="input w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Secondary Phone Number" name="secondary_phone" required/>
                             </div>
                         </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="text-center col-span-2">
+                        <button class="btn bg-blue-600 text-white px-6 py-2 rounded-md shadow-md hover:bg-blue-700 transition duration-300" type="submit">Add User</button>
+                       </div>
                     </form>
             
-                    <!-- Submit Button -->
-                    <div class="mt-6 text-center">
-                        <button class="btn bg-blue-600 text-white px-6 py-2 rounded-md shadow-md hover:bg-blue-700 transition duration-300">Add User</button>
-                    </div>
+                    
+                    
                 </fieldset>
             </div>
 
@@ -157,7 +163,13 @@
            return Math.floor(100000 + Math.random() * 900000);
         }
 
-        document.getElementById('userID').innerText = generateRandom4Digit();
+        const id = generateRandom4Digit();
+
+        document.getElementById('userID').innerText = id;
+        document.getElementById('hiddenUserID').value = id;
+
+        console.log(document.getElementById('hiddenUserID').value);
+        
 
     </script>
   </body>
