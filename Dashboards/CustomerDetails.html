@@ -51,81 +51,41 @@
       <h1 class="text-2xl font-semibold text-slate-600">Customer Details</h1>
       
       <!-- Search Box -->
-      <div class="mt-8 flex justify-around">
 
-         <div class="w-xl">
-        <label class="input">
-          <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g></svg>
-          <input type="search" required placeholder="Meter Number"/>
-        </label>
-         </div>
+      <form action="../API/showCustomerDetails.php" method="POST">
 
-        <div class="w-xl">
-          <select class="select" >
-              <option selected>Month</option>
-              <option >January</option>
-              <option >February</option>
-              <option >March</option>
-              <option >April</option>
-              <option >May</option>
-              <option >June</option>
-              <option >July</option>
-              <option >August</option>
-              <option >September</option>
-              <option >October</option>
-              <option >november</option>
-              <option >December</option>
-          </select>
-        </div>
+        <div class="mt-8 flex justify-center gap-10">
 
-        <div >
-           <button class="btn bg-blue-400 text-white">Search</button>
-        </div>
-
-
-
-      </div>
-
-
-      <!-- Customer Detaisl --> 
-      <div class="mt-12">
-
-        <h1 class="text-2xl text-slate-400 font-semibold">Customer Information</h1>
-        
-        <!-- Table -->
-        <div>
-          <div class="overflow-x-auto">
-            <table class="table mt-8">
-              <!-- head -->
-              <thead>
-                <tr>
-                 
-                  <th>Meter Number</th>
-                  <th>Month</th>
-                  <th>Used Units</th>
-                  <th>Total Bill</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <!-- row 1 -->
-                <tr>
-                  
-                  <td>2341231</td>
-                  <td>January</td>
-                  <td>123</td>
-                  <td>1045.43</td>
-                  <td>Unpaid</td>
-                </tr>
-               
-              </tbody>
-            </table>
+          <div class="">
+         <label class="input">
+           <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g></svg>
+           <input type="search" placeholder="Meter Number" name="meter_number"/>
+         </label>
           </div>
-        </div>
 
-      </div>
+          <div>
+            
+            <select class="select" id="loginas" required name="statusupdate">
+              <option value="all" selected >ALL</option>
+              <option value="unpaid">Unpaid</option>
+              <option value="paid" >Paid</option>
+            </select>
+          </div>
+ 
+ 
+         <div >
+            <button class="btn bg-blue-400 text-white" type="submit">Search</button>
+         </div>
+ 
+ 
+ 
+       </div>
 
+      </form>
+      
+
+
+    
       <div class="flex justify-center">
         <a href="./AdminDashboard.html"><button class="btn mt-24 ">Back to Dashboard</button></a>
         
