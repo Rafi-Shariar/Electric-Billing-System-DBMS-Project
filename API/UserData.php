@@ -86,6 +86,7 @@ if($action == 'billdetails'){
                    <tr>
                      <th>Bill ID</th>
                      <th>Month</th>
+                     <th>Year</th>
                      <th>Units</th>
                      <th>Amount</th>
                      <th>Status</th>
@@ -102,6 +103,7 @@ if($action == 'billdetails'){
                   <tr>
                     <td> " . $row['bill_id']." </td>
                     <td>" . $row['month']." </td>
+                    <td>" . $row['year']." </td>
                     <td>" . $row['unit']." </td>
                     <td>" . $row['amount']." </td>
                     <td>" . $row['status']." </td>
@@ -211,6 +213,7 @@ echo'
                <tr>
                  <th>Bill ID</th>
                  <th>Month</th>
+                 <th>Year</th>
                  <th>Units</th>
                  <th>Amount</th>
                  <th>Status</th>
@@ -229,6 +232,7 @@ echo'
               <tr>
                 <td> " . $row['bill_id']." </td>
                 <td>" . $row['month']." </td>
+                 <td>" . $row['year']." </td>
                 <td>" . $row['unit']." </td>
                 <td>" . $row['amount']." </td>
                 <td>" . $row['status']." </td>

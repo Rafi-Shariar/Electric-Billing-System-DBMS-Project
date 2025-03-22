@@ -49,70 +49,30 @@
      <main class="w-10/12 mx-auto mt-6">
         
       <div class="flex justify-between items-center mb-8">
-        <h1 class="text-center mt-10 text-3xl text-slate-500 font-semibold">Deleted User Log</h1>
+        <h1 class="text-center mt-10 text-3xl text-slate-500 font-semibold">Delete User </h1>
 
         <div class="mt-7">
             <a href="./AdminDashboard.html" class="btn mt-4 bg-slate-300">Back to Dashboard</a>
         </div>
      </div>
 
-        <!-- table -->
-         <div>
-            <div class="overflow-x-auto">
-                <table class="table">
-                  <!-- head -->
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Meter Number</th>
-                      <th>Address</th>
-                      <th>City</th>
-                      <th>Email</th>
-                      <th>Meter Type</th>
 
-                    </tr>
-                  </thead>
+     <div class="w-3/12 mx-auto p-10 text-center bg-slate-200 rounded-2xl">
 
-                  <tbody>
-                    <!-- row 1 -->
-                    <tr>
-                  
-                      <td>Rafi Shariar</td>
-                      <td>972342</td>
-                      <td>Mirpur-1</td>
-                      <td>Dhaka</td>
-                      <td>rafi@gmail.com</td>
-                      <td>Residential</td>
+       <form action="../API/deleteUser.php" method="POST">
+        <div class="">
+          <label class="input">
 
-                    </tr>
-                    <!-- row 2 -->
-                    <tr>
-                        <td>Rafi Shariar</td>
-                        <td>972342</td>
-                        <td>Mirpur-1</td>
-                        <td>Dhaka</td>
-                        <td>rafi@gmail.com</td>
-                        <td>Residential</td>
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g></svg>
 
-                    </tr>
-                    <!-- row 3 -->
-                    <tr>
-                        <td>Rafi Shariar</td>
-                        <td>972342</td>
-                        <td>Mirpur-1</td>
-                        <td>Dhaka</td>
-                        <td>rafi@gmail.com</td>
-                        <td>Residential</td>
+            <input type="search" placeholder="Meter Number" name="meter_number"/>
+          </label>
+           </div>
+        <button class="btn bg-red-500 text-white hover:bg-red-300 mt-5" type="submit">Delete</button>
+      </form>
+     
+     </div>
 
-                    </tr>
-
-
-
-                    <!-- more data -->
-                  </tbody>
-                </table>
-              </div>
-         </div>
     </main>
 
 
