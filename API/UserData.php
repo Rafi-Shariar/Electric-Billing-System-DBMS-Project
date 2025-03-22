@@ -232,7 +232,11 @@ echo'
                 <td>" . $row['unit']." </td>
                 <td>" . $row['amount']." </td>
                 <td>" . $row['status']." </td>
-                <td><form action='./pay.php' method='POST'> <button class='btn btnn' name='paybill'> pay </button> </form> </td> 
+                <td>
+                  <form action='./pay.php' method='POST'>
+                    <button class='btn btnn bg-blue-500 text-white' name='paybill' type='submit' value='".$row['bill_id']."'> Pay </button>
+                  </form
+              </td> 
               </tr>
 
             ";
