@@ -16,7 +16,7 @@ $action = $_POST['btn'];
 
 if($action == 'billdetails'){
 
-    $sql = "SELECT * FROM Bill_List WHERE meter_number = $meter_number" ;
+    $sql = "SELECT * FROM Sorted_Bills WHERE meter_number = $meter_number ";
     $result = $conn->query($sql);
 
 

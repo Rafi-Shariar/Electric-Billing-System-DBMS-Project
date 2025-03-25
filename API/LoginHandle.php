@@ -19,12 +19,26 @@ $userType = $_POST['usertype'];
 
 //Handling Admin login Manually
 if($userType === 'Admin'){
-    echo '
-    <script>
-       window.location = "../Dashboards/AdminDashboard.html";
-     </script>
-    ';
-    exit();
+
+    If($userID == 123 && $pass == "123"){
+        echo '
+            <script>
+             window.location = "../Dashboards/AdminDashboard.html";
+            </script>
+        ';
+     exit();
+
+    }
+    else {
+        echo '
+        <script>
+           alert("Wrong Username or Password !!");
+           window.location = "../";
+         </script>
+        ';
+        
+    }
+    
 }
 
 
@@ -46,8 +60,6 @@ if($result->num_rows > 0){
              </script>
             ';
 
-        // header("Location: ../Dashboards/User/UserDashboard.html");
-        // exit();
 
     }
     else {

@@ -87,8 +87,8 @@ if($query){
                   <th>Meter Number</th>
                  <th>Bill ID</th>
                  <th>Month</th>
-                <th>Used Units</th>
-                <th>Amount</th>
+                <th>Year</th>
+                <th>Units</th>
                 <th>Status</th>
                </tr>
              </thead>
