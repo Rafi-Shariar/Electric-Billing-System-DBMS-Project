@@ -18,7 +18,7 @@ $units =(int) $_POST['unit'];
 $amount =(int) $_POST['amount'];
 $status = "Unpaid";
 
-$query2 = mysqli_query($conn, "CALL SubmitBill($meter_number, '$month', $year, $units, 'Unpaid' , $year)");
+$query2 = mysqli_query($conn, "CALL SubmitBill($meter_number, '$month', $units, $amount, 'Unpaid' , $year)");
     
 if($query2){
 
