@@ -19,7 +19,7 @@ $meter_number = $_POST['meter_number'];
 $sql = "DELETE FROM Customer_List WHERE meter_number = $meter_number" ;
 $result = $conn->query($sql);
 
-if($result){
+if($result->num_rows > 0){
     echo '
     
             <script>
@@ -27,6 +27,15 @@ if($result){
                 window.location = "../Dashboards/DeleteUser.html"
 
             </script>
+    ';
+}
+else {
+    
+    echo '
+    <script>
+        alert("No Such Meter ID found on System !!");
+       window.location = "../Dashboards/DeleteUser.html";
+     </script>
     ';
 }
 

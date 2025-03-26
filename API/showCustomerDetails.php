@@ -124,5 +124,3 @@ if($query){
 </body>
 </html>";
 }
-
-
