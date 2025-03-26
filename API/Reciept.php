@@ -18,7 +18,7 @@ $units = $_POST['unit'];
 $amount = $_POST['amount'];
 $status = "Unpaid";
 
-$sql = "CALL GetBillerDetails('$meter_number')";
+$sql = "SELECT * FROM Customer_List WHERE meter_number = $meter_number";
 $result = $conn->query($sql);
 
 if($result->num_rows > 0){
