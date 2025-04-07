@@ -89,6 +89,7 @@ if($query){
                  <th>Month</th>
                 <th>Year</th>
                 <th>Units</th>
+                <th>Amount</th>
                 <th>Status</th>
                </tr>
              </thead>
@@ -104,6 +105,7 @@ if($query){
                 <td> " . $row['meter_number']." </td>
                 <td>" . $row['bill_id']." </td>
                 <td>" . $row['month']." </td>
+                <td>" . $row['year']." </td>
                 <td>" . $row['unit']." </td>
                 <td>" . $row['amount']." </td>
                 <td>" . $row['status']." </td>
