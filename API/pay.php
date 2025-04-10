@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 
 $BillID = $_POST['paybill'];
 
-$query = mysqli_query($conn, "UPDATE Bill_List SET status = 'Paid' WHERE bill_id = $BillID");
+$query = mysqli_query($conn, "CALL MarkBillAsPaid($BillID)");
 
 if($query){
 

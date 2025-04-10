@@ -141,13 +141,10 @@ if($action == 'billdetails'){
 }
 elseif($action == 'paybill'){
 
-//
-
-$sql = "SELECT * FROM Bill_List WHERE meter_number = $meter_number AND status = 'Unpaid'" ;
-$result = $conn->query($sql);
-
-
-echo'
+  $query = mysqli_query($conn, "CALL GetUnpaidBills($meter_number)"); 
+  $result = $query;
+  
+  echo'
 
 <!DOCTYPE html>
 <html lang="en">

@@ -25,7 +25,7 @@ if($result->num_rows>0){
         
 
         //Inserting Data into login_credentials
-        $query2 = mysqli_query($conn, "INSERT INTO Login_Credentials(userid,password) VALUES ($userID,'$pass')");
+        $query2 = mysqli_query($conn, "CALL InsertLoginCredentials($userID,'$pass')");
 
         if($query2){
             echo '
