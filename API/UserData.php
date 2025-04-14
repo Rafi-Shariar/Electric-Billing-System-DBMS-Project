@@ -73,7 +73,7 @@ if($action == 'billdetails'){
        <main class="w-10/12 mx-auto">
          
            <div class="flex justify-around items-center mt-10">
-               <h1 class="text-2xl text-slate-500 font-semibold mt-10">Billing Details</h1>
+               <h1 class="text-2xl text-slate-500 font-semibold mt-10">Billing Records</h1>
                <a href="../Dashboards/User/UserDashboard.html" class="btn mt-5">Back to Dashboard</a>
            </div>
    
@@ -197,7 +197,7 @@ elseif($action == 'paybill'){
    <main class="w-10/12 mx-auto">
      
        <div class="flex justify-around items-center mt-10">
-           <h1 class="text-2xl text-slate-500 font-semibold mt-10">Billing Details</h1>
+           <h1 class="text-2xl text-slate-500 font-semibold mt-10">Unpaid Bills</h1>
            <a href="../Dashboards/User/UserDashboard.html" class="btn mt-5">Back to Dashboard</a>
        </div>
 
@@ -316,7 +316,7 @@ echo'
    <main class="w-10/12 mx-auto">
      
        <div class="flex justify-around items-center mt-10">
-           <h1 class="text-2xl text-slate-500 font-semibold mt-10">Billing Details</h1>
+           <h1 class="text-2xl text-slate-500 font-semibold mt-10">Personal Informations </h1>
            <a href="../Dashboards/User/UserDashboard.html" class="btn mt-5">Back to Dashboard</a>
        </div>
 
