@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin-Calculate Bill</title>
+
+  <!-- Tailwind + Daisy UI Setup -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Custom Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome / Icon Setup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <!-- Common Style -->
+  <style>
+    .font-primary {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="font-primary ">
+
+  <header>
+
+    <div class="p-5 border-b border-blue-600 shadow-lg">
+      <div class="flex justify-center items-center gap-8">
+        <img src="../Images/logo.png" alt="" class="w-16">
+        <h1 class="text-4xl font-semibold text-slate-500">Daffodil Power Distribution</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-10/12 mx-auto mt-6">
+
+
+    <h1 class="text-3xl font-semibold text-slate-500 mt-10"> Monthly Statement</h1>
+
+
+    <!-- Search Box -->
+    <form action="../API/Statement.php" method="POST">
+
+      <div class="grid grid-cols-3 gap-5 mt-15 mx-auto">
+
+
+        <select class="select" required name="month">
+          <option>Month</option>
+          <option>January</option>
+          <option>February</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option>December</option>
+        </select>
+
+
+        <select class="select" required name="year">
+          <option>Year</option>
+          <option>2025</option>
+          <option>2024</option>
+          <option>2023</option>
+        </select>
+
+
+      </div>
+
+
+      <div class="flex gap-10 mt-20">
+        <button class="btn btn-lg bg-blue-500 text-white" type="submit">Check</button>
+        <a href="./AdminDashboard.html" class="btn btn-lg bg-red-500 text-white"> Back</a>
+      </div>
+
+    </form>
+
+
+
+
+  </main>
+
+
+</body>
+</body>
+
+</html>
